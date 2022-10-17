@@ -7,11 +7,19 @@ main {
     display: flex;
     justify-content: center;
 }
+/* .head {
+    display: flex;
+    
+} */
+/* #close { 
+    text-decoration: none;
+    padding-top: 30px;
+    margin-left: 100px;
+} */
+
 .container {
-    /* padding: 3px 0; */
     width: 450px;
     height: 500px;
-    /* border-style: ridge; */
     border-color:#1B97CC ;
     display: flex;
     flex-direction: column;
@@ -35,4 +43,7 @@ main {
 #button {
     width: 18.7rem;
     padding: 5px 20px;
+}
+#masuk {
+    text-decoration: none;
 }
