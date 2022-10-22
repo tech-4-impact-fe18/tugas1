@@ -39,3 +39,9 @@ h1 {
     color: white;
     cursor: pointer;
 }
+.selesai {
+    display: none;
+}
+.selanjutnya {
+    display: none;
+}

@@ -14,14 +14,15 @@
         <div class="soal">
             <p>Dalam sebulan terakhir, seberapa sering Anda merasa kesal karena sesuatu yang terjadi secara tidak terduga?</p>
             <div class="jawaban">
-                <button id="1">Tidak Pernah</button>
-                <button id="2">Jarang</button>
-                <button id="3">Kadang-kadang</button>
-                <button id="4">Cukup Sering</button>
-                <button id="5">Sering</button>
+                <button id="1" onclick="setSkor(1)">Tidak Pernah</button>
+                <button id="2" onclick="setSkor(2)">Jarang</button>
+                <button id="3" onclick="setSkor(3)">Kadang-kadang</button>
+                <button id="4" onclick="setSkor(4)">Cukup Sering</button>
+                <button id="5" onclick="setSkor(5)">Sering</button>
             </div>
             <div class="next">
                 <button id="next">Selanjutnya</button>
+                <button id="selesai" class="selesai" onclick="result()">Selesai</button>
             </div>
         </div>
     </section>
