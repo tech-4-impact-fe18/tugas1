@@ -10,6 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- BRUCEL CSS -->
     <link rel="stylesheet" href="style.css">
 
@@ -26,8 +31,13 @@
                     <a class="navbar-brand">Sapasikolog</a>
                     <form class="d-flex">
                         <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal"
-                            data-bs-target="#loginModal">Masuk</button>
-                        <button class="btn btn-outline-primary">Daftar</button>
+                            data-bs-target="#loginModal" id="b-login">Masuk</button>
+                        <button class="btn btn-outline-primary" id="b-register">Daftar</button>
+                        <div class="d-user" id="d-user">
+                            <i class="fa-regular fa-user"></i>
+                            <span id="userName"></span>
+                        </div>
+
                     </form>
                 </nav>
                 <!-- AKHIR NAVBAR -->
@@ -68,9 +78,11 @@
                             <!-- MODAL BODY -->
                             <!-- MODAL FOOTER -->
                             <div class="modal-footer d-flex flex-column">
-                                <button type="button" class="btn btn-primary form-control fw-bold" id="loginButton">Masuk</button>
+                                <button type="button" class="btn btn-primary form-control fw-bold"
+                                    id="loginButton">Masuk</button>
                                 <p>atau</p>
-                                <button type="button" class="btn btn-outline-primary form-control fw-bold" id="loginGoogle">Masuk dengan Google</button>
+                                <button type="button" class="btn btn-outline-primary form-control fw-bold"
+                                    id="loginGoogle">Masuk dengan Google</button>
                                 <p>kamu belum punya akun? <a href="">buat akun sekarang</a></p>
                             </div>
                             <!-- MODAL FOOTER -->

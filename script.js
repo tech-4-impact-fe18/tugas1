@@ -2,6 +2,10 @@ let inputEmail = document.getElementById('inputEmail');
 let inputPassword = document.getElementById('inputPassword');
 const loginButton = document.getElementById('loginButton');
 const loginGoogle = document.getElementById('loginGoogle');
+const bLogin = document.getElementById('b-login');
+const bRegister = document.getElementById('b-register');
+const dUser = document.getElementById('d-user');
+let userName = document.getElementById('userName');
 
 
 // akses API
@@ -26,7 +30,7 @@ fetch('https://6350b1d078563c1d82c627f2.mockapi.io/persons')
                 for (let i = 0; i < persons.length; i++) {
                     // login berhasil
                     if(email == persons[i].email && password == persons[i].password) {
-                        return loginSuccess()
+                        return loginSuccess(persons[i].name)
                     }
                 }
 
@@ -35,9 +39,14 @@ fetch('https://6350b1d078563c1d82c627f2.mockapi.io/persons')
             }
         });
 
-        const loginSuccess = () => {
+        const loginSuccess = (user) => {
             alert('login berhasil');
-            return window.location.href = "index.html";
+            bLogin.classList.toggle('b-none')
+            bRegister.classList.toggle('b-none')
+            dUser.classList.toggle('d-user')
+            userName.innerHTML = user
+            // window.location.href = "index.html";
+            return;
         }
 
     })
