@@ -8,23 +8,25 @@ const dUser = document.getElementById("d-user");
 const btnClose = document.getElementById('auth-modal')
 let userName = document.getElementById("userName");
 
-// if login success, call this function
+// *IF LOGIN SUCCESS, CALL THIS FUNCTION
 const loginSuccess = (user) => {
 
-    // alert("login berhasil");
     btnClose.click();
     bLogin.classList.toggle("b-none");
     bRegister.classList.toggle("b-none");
     dUser.classList.toggle("d-user");
     userName.innerHTML = user;
-    // window.location.href = "index.html";
     return;
   };
 
+// *VALIDATION INPUT
 document.addEventListener("DOMContentLoaded", (e) => {
+
+    // *API ACCESS
   loginButton.addEventListener("click", async (e) => {
     e.preventDefault();
 
+    // *IF API TRUE 0R STATUS 200
     try {
       const users = await fetch(
         "https://6350b1d078563c1d82c627f2.mockapi.io/persons"
@@ -34,8 +36,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
       const password = inputPassword.value;
 
       // Todo: Check if user not exists.
-      const user = users.find((user) => {
-        return user.email === email;
+      const user = users.find((us) => {
+        return us.email === email;
       });
 
       if (user === undefined) {
@@ -48,13 +50,13 @@ document.addEventListener("DOMContentLoaded", (e) => {
       }
 
       //   Todo: login success
-
       return loginSuccess(user.name);
 
 
 
+      //IF API ERROR
     } catch (error) {
-      console.log(error.message);
+      alert(error.message);
     }
   });
 });
