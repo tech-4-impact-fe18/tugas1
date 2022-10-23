@@ -15,9 +15,10 @@ async function daftar(data) {
               },
             
         })
-        console.log("Anda Berhasil Registrasi", result);
+        alert("Anda Berhasil Registrasi", result);
+        window.location.href="landing-page.html"
     } catch (error) {
-        console.log("gagal register");
+        alert("gagal register");
     }
 }
 
@@ -30,7 +31,10 @@ register.addEventListener("click", (event) => {
         email : email.value,
         password : password.value 
     };
-    daftar(user_regis)
+    if(nama.value && email.value && password.value){
+        return daftar(user_regis)
+    }
+    return alert("Form Harus Diisi")
 
 //     let register = user_regis.nama_user == user.nama &&
 //                     user_regis.email_user == user.email &&
