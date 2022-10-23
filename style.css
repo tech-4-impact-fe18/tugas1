@@ -1,0 +1,9 @@
+.b-none {
+    /* transition: 1000ms ease-in-out; */
+    display: none;
+}
+
+.d-user {
+    /* transition: .100ms ease-in-out; */
+    display: none;
+}
