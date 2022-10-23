@@ -11,21 +11,30 @@
 .test {
     padding: 0 350px;
 }
-h1 {
+h2 {
     text-align: center;
     color: blue;
     margin-bottom: 80px;
+    margin-top: 200px;
 }
 .soal p {
     margin-bottom: 50px;
 }
 .jawaban button {
     border: 1px solid rgb(153, 153, 153);
-    color: rgb(68, 68, 245);
-    background-color: white;
+    background-color: #1B97CC;
+    color: white;
     padding: 5px 0;
     cursor: pointer;
+    border-radius: 20px;
+    opacity: 0.5;
+    transition: 0.3s;
 }
+
+.jawaban button:focus{
+    background-color:blue;
+}
+
 .next {
     display: flex;
     justify-content: end;
@@ -38,10 +47,22 @@ h1 {
     border: none;
     color: white;
     cursor: pointer;
+    border-radius: 20px;
 }
+
 .selesai {
     display: none;
+    padding: 5px 30px;
+    background-color:rgb(68, 68, 245) ;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
 }
 .selanjutnya {
     display: none;
+}
+
+.card{
+    border-style: none;
 }

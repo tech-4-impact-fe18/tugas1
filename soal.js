@@ -32,7 +32,7 @@ function result() {
 
 let selesai = document.getElementById("next");
 let selanjutnya = document.getElementById("next");
-let tagSoal = document.getElementsByTagName("p")[0];
+let tagSoal = document.getElementsByTagName("h5")[0];
 selanjutnya.addEventListener("click", function(){
     hasil += skor; 
     indexSoal += 1
