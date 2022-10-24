@@ -11,30 +11,17 @@ let userName = document.getElementById("userName");
 
 // *IF LOGIN SUCCESS, CALL THIS FUNCTION
 const loginSuccess = (user) => {
-  btnClose.click();
-  bLogin.style.display = "none";
-  bRegister.style.display = "none";
-  dUser.style.display = "block";
-  userName.innerHTML = user;
-  return;
+  window.location.href="landing-page.html"
 };
 
 // Todo: button Keluar di klik
-btnOut.onclick = () => {
-  localStorage.clear()
-  location.reload()
-}
 
+btnClose.onclick = () =>{
+  window.location.href="landing-page.html"
+}
 // *VALIDATION INPUT
 document.addEventListener("DOMContentLoaded", (e) => {
-  const user = localStorage.getItem("name");
-
-  if (user !== null && user !== "") {
-    bLogin.style.display = "none";
-    bRegister.style.display = "none";
-    dUser.style.display = "block";
-    userName.innerHTML = user;
-  }
+  
   
   // *API ACCESS
   loginButton.addEventListener("click", async (e) => {

@@ -11,28 +11,30 @@
 <body>
     <main>
         <section class="container" onsubmit="javascript:void(0)">
-            <div class="close">X</div>
+            <div class="close"><a href="landing-page.html" style="text-decoration:none ;">X</a></div>
             <div class="head">
                 <h1 style="font-family:'Poppins', sans-serif; "><i>SapaSikolog</i></h1>
             </div>
             <h2>Daftarkan Diri Kamu</h2>
             
             <div class="inputan">
-                <input type="text" placeholder="Masukkan Nama Kamu " id="nama" class="input nama">
-                <input type="email" placeholder="Masukkan Email Kamu" id="email" class="input email">
-                <input type="password" placeholder="Masukkan Password Kamu" id="password" class="input password">
-                <input type="password" placeholder="Ulangi Password Kamu" id="kofirmasi" class="input confirm">
+                <input type="text" placeholder="Masukkan Nama Kamu " id="nama" class="input nama" required>
+                <input type="email" placeholder="Masukkan Email Kamu" id="email" class="input email"required>
+                <input type="password" placeholder="Masukkan Password Kamu" id="password" class="input password"required>
+                <input type="password" placeholder="Ulangi Password Kamu" id="kofirmasi" class="input confirm" required>
                 <div class="cek">
                     <input type="checkbox" name="setuju" id="setuju">
                     <label for="">Setuju dengan S&K</label>
                 </div>
             </div>
             
-            <button id="register" class="button" style="background-color: blue; color:aliceblue; border-color: blue;"><a>Register</a></button>
+            <button id="register" class="button" style="color:aliceblue; border-color: blue; background-color: blue;"><a href="landing-page.html" style="text-decoration:none; color: aliceblue;">Register</a></button>
             <p>atau</p>
             <button class="button" style="color: blue; background-color: white;border: none; border-style: groove; "><a>Masuk dengan Google</a></button>
-            <p >Kamu Sudah Punya Akun?<a id="masuk" href="" style="color: blue;">Masuk</a></p>
+            <p >Kamu Sudah Punya Akun?<a id="masuk" href="login.html" style="color: blue;" data-bs-toggle="modal"
+                data-bs-target="#loginModal">Masuk</a></p>
         </section>
+        
     </main>
 </body>
 </html>

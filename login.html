@@ -31,26 +31,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <!-- AWAL NAVBAR -->
-                <nav class="navbar navbar-light bg-light">
-                    <a class="navbar-brand">Sapasikolog</a>
-                    <form class="d-flex">
-                        <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal"
-                            data-bs-target="#loginModal" id="b-login">Masuk</button>
-                        <button class="btn btn-outline-primary" id="b-register">Daftar</button>
-                        <div class="d-user" id="d-user">
-                            <i class="fa-regular fa-user"></i>
-                            <span id="userName" class="me-4"></span>
-                            <button class="btn btn-outline-danger" id="out">Keluar</button>
-                        </div>
-
-                    </form>
-                </nav>
-                <!-- AKHIR NAVBAR -->
-
+                
                 <!-- AWAL MODAL -->
                 <!-- HEADER MODAL -->
-                <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+                <div class="modal fade show" style="display: block;" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -77,7 +61,7 @@
                                     <div class="mb-3 form-check">
                                         <input type="checkbox" class="form-check-input" id="cbRemember">
                                         <label class="form-check-label" for="cbRemember">ingat saya</label>
-                                        <span class="float-end"><a href="#">lupa password?</a></span>
+                                        <!-- <span class="float-end"><a href="#">lupa password?</a></span> -->
                                     </div>
                                 </form>
                             </div>
@@ -89,7 +73,7 @@
                                 <p>atau</p>
                                 <button type="button" class="btn btn-outline-primary form-control fw-bold"
                                     id="loginGoogle">Masuk dengan Google</button>
-                                <p>kamu belum punya akun? <a href="">buat akun sekarang</a></p>
+                                <p>kamu belum punya akun? <a href="index.html">buat akun sekarang</a></p>
                             </div>
                             <!-- MODAL FOOTER -->
                         </div>

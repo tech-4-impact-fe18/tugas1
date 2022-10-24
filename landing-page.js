@@ -39,17 +39,25 @@ function showart(response) {
     });
 }
 
-{/* <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
 
-<div class="col-auto">
-                <div class="card-body">
-                        <p class="card-text">${title}</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="${url}" class="btn btn-primary me-4" role="button" >Selengkapnya</a>
-                    </div>
-            </div> */}
+const bLogin = document.getElementById("b-login");
+const bRegister = document.getElementById("b-register");
+const dUser = document.getElementById("d-user");
+const btnClose = document.getElementById("auth-modal");
+const btnOut = document.getElementById("out");
+let userName = document.getElementById("userName");
+
+
+// *VALIDATION INPUT
+document.addEventListener("DOMContentLoaded", (e) => {
+  const user = localStorage.getItem("name");
+
+  if (user !== null && user !== "") {
+    bLogin.style.display = "none";
+    bRegister.style.display = "none";
+    dUser.style.display = "block";
+    userName.innerHTML = user;
+  }
+  
+});
+
