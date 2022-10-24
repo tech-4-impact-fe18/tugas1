@@ -16,66 +16,21 @@
         <div class="container-fluid" id="div-head">
             <h1 class="fw-bold">Sapasikolog.com</h1>
             <form action="">
-                <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal"
-                            data-bs-target="#loginModal" id="b-login">Masuk</button>
-                <button class="btn btn-outline-primary" id="b-register">Daftar</button>
-                <div class="d-user" id="d-user">
+                <a href="login.html" id="b-login" class="btn btn-primary pe-2" role="button" >Masuk</a>
+                <a href="index.html" class="btn btn-primary me-4" role="button" id="b-register">Daftar</a>
+
+                <div class="d-user" id="d-user" style="display: none;">
                     <i class="fa-regular fa-user"></i>
-                    <span id="userName"></span>
+                    <span id="userName" class="me-4"></span>
                 </div>
             </form>
+            
         </div>
     </div>
 
 
-    <!-- AWAL MODAL -->
-                <!-- HEADER MODAL -->
-                <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h3 class="modal-title fw-bold" id="loginModalLabel">Sapasikolog</h3>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <!-- HEADER MODAL -->
-                            <!-- MODAL BODY -->
-                            <div class="modal-body">
-                                <h5 class="text-center">Masuk ke Akun Kamu</h5>
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="inputEmail" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="inputEmail"
-                                            aria-describedby="emailHelp" placeholder="masukkan email kamu" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="inputPassword" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="inputPassword"
-                                            placeholder="masukkan password kamu" required>
-                                    </div>
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="cbRemember">
-                                        <label class="form-check-label" for="cbRemember">ingat saya</label>
-                                        <span class="float-end"><a href="#">lupa password?</a></span>
-                                    </div>
-                                </form>
-                            </div>
-                            <!-- MODAL BODY -->
-                            <!-- MODAL FOOTER -->
-                            <div class="modal-footer d-flex flex-column">
-                                <button type="button" class="btn btn-primary form-control fw-bold"
-                                    id="loginButton">Masuk</button>
-                                <p>atau</p>
-                                <button type="button" class="btn btn-outline-primary form-control fw-bold"
-                                    id="loginGoogle">Masuk dengan Google</button>
-                                <p>kamu belum punya akun? <a href="">buat akun sekarang</a></p>
-                            </div>
-                            <!-- MODAL FOOTER -->
-                        </div>
-                    </div>
-                </div>
-                <!-- AKHIR MODAL -->
+
+    
 
 
     <div class="container-fluid">

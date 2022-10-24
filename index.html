@@ -11,7 +11,7 @@
 <body>
     <main>
         <section class="container" onsubmit="javascript:void(0)">
-            <div class="close">X</div>
+            <div class="close"><a href="landing-page.html" style="text-decoration:none ;">X</a></div>
             <div class="head">
                 <h1 style="font-family:'Poppins', sans-serif; "><i>SapaSikolog</i></h1>
             </div>
@@ -31,8 +31,10 @@
             <button id="register" class="button" style="color:aliceblue; border-color: blue; background-color: blue;"><a href="landing-page.html" style="text-decoration:none; color: aliceblue;">Register</a></button>
             <p>atau</p>
             <button class="button" style="color: blue; background-color: white;border: none; border-style: groove; "><a>Masuk dengan Google</a></button>
-            <p >Kamu Sudah Punya Akun?<a id="masuk" href="login.html" style="color: blue;">Masuk</a></p>
+            <p >Kamu Sudah Punya Akun?<a id="masuk" href="login.html" style="color: blue;" data-bs-toggle="modal"
+                data-bs-target="#loginModal">Masuk</a></p>
         </section>
+        
     </main>
 </body>
 </html>
