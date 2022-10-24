@@ -1,0 +1,64 @@
+#d-user {
+  display: none;
+}
+
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #1B97CC; 
+  font-family: inter;
+}
+
+#nav{
+  color:#ffff;
+  margin-left: 20px;
+}
+
+.card {
+  color: #000;
+  text-align: left;
+  font-size: 18px;
+  align-items: center;
+}
+
+.articel{
+  margin-left: 0.8em;
+}
+
+.card-body{
+  padding: 5px;
+}
+
+.card-footer{
+  padding: 0%;
+  border-radius: 15px;
+}
+
+#content{
+  margin :30px 30px 15px 15px;
+}
+
+.rilis{
+  color: rgb(0, 0, 0);
+  font-style: italic;
+}
+
+.articel-2{
+  margin: 30px 20px 10px 30px;
+  font-weight: lighter;
+  font-size: 30px;
+  color: #ffff;
+}
+
+#content{
+  margin-top: 5px;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 40px 60px -20px rgba(12, 5, 62, 0.15);
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal</title>
+    <script defer src="soal.js"></script>
+    <link rel="stylesheet" href="soal.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+      <div class="card  m-5 p-5 border-0">
+        <h2 class="card-header border-0 pb-5 pt-1" style="background-color: white;"><i>SapaSikolog.com</i></h2>
+        <h5 class="card-title mb-5 mt-1">Dalam sebulan terakhir, seberapa sering Anda merasa kesal karena sesuatu yang terjadi secara tidak terduga?</h5>
+              <div class="jawaban">
+                  <button id="1" onclick="setSkor(1)">Tidak Pernah</button>
+                  <button id="2" onclick="setSkor(2)">Jarang</button>
+                  <button id="3" onclick="setSkor(3)">Kadang-kadang</button>
+                  <button id="4" onclick="setSkor(4)">Cukup Sering</button>
+                  <button id="5" onclick="setSkor(5)">Sering</button>
+              </div>
+              <div class="next">
+                <button id="next">Selanjutnya</button>
+                <button id="selesai" class="selesai" onclick="result()">Selesai</button>
+            </div>
+        </div>
+      </div>
+</body>
+</html>
