@@ -6,6 +6,7 @@ const bLogin = document.getElementById("b-login");
 const bRegister = document.getElementById("b-register");
 const dUser = document.getElementById("d-user");
 const btnClose = document.getElementById("auth-modal");
+const btnOut = document.getElementById("out");
 let userName = document.getElementById("userName");
 
 // tangkap ID LOGIN dan ID MASUK, manipulasi cssnya
@@ -20,6 +21,12 @@ const loginSuccess = (user) => {
   return;
   // toStorage(user);
 };
+
+// Todo: button Keluar di klik
+btnOut.onclick = () => {
+  localStorage.clear()
+  location.reload()
+}
 
 // const toRedirect = (redic) => {
 //   console.log(redic);
@@ -53,17 +60,24 @@ const loginSuccess = (user) => {
 
 // *VALIDATION INPUT
 document.addEventListener("DOMContentLoaded", (e) => {
-//   const user = localStorage.getItem("name");
-// //   console.log(user);
-//   if (user === null || user === "") {
-//     // return window.location.href = "index.html";
-//     return;
-//   } else {
-//     bLogin.style.display = "none";
-//     bRegister.style.display = "none";
-//     dUser.style.display = "block";
-//     userName.innerHTML = user;
-//   }
+  const user = localStorage.getItem("name");
+
+  if (user !== null && user !== "") {
+    bLogin.style.display = "none";
+    bRegister.style.display = "none";
+    dUser.style.display = "block";
+    userName.innerHTML = user;
+  }
+  // //   console.log(user);
+  //   if (user === null || user === "") {
+  //     // return window.location.href = "index.html";
+  //     return;
+  //   } else {
+  //     bLogin.style.display = "none";
+  //     bRegister.style.display = "none";
+  //     dUser.style.display = "block";
+  //     userName.innerHTML = user;
+  //   }
   // *API ACCESS
   loginButton.addEventListener("click", async (e) => {
     e.preventDefault();
@@ -92,8 +106,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
       }
 
       //   Todo: login success
+      localStorage.setItem("name", user.nama);
       return loginSuccess(user.nama);
-    //   localStorage.setItem("name", user.nama);
       //   toRedirect(user.name);
 
       //IF API ERROR
